@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.sub1 {
+  width: 100%;
+}
+
+#sub2id {
+  width: 0;
+  opacity: 0;
+  background-color: aqua;
+  transition: width 1s, opacity 2s;
+}
+
+#sub2id:target {
+  width: 50%;
+  opacity: 1;
+}
+
+#btns {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 0 10px 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
