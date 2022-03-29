@@ -8,26 +8,35 @@
     <script src="https://kit.fontawesome.com/8abcb1c74f.js" crossorigin="anonymous"></script>
     <title>Mi Portafolio</title>
 </head>
-<body>
+<body id="body">
     <nav id="navbar">
         <a href="#nav_links"><i class="fa-solid fa-bars" id="menu"></i></a>
+        <ul id="desktop_nav_links">
+            <li><a>Proyectos</a></li>
+            <li><a href="https://github.com/cesaradrianer">GitHub</a></li>
+            <li><a href="https://codepen.io/c-sar-adri-n-estrada-res-ndiz">Codepen.io</a></li>
+        </ul>
     </nav>
     <main>
-        <div id="nav_links">
-            <ul>
-                <li><a>Proyectos</a></li>
-                <li><a href="https://github.com/cesaradrianer">GitHub</a></li>
-                <li><a href="https://codepen.io/c-sar-adri-n-estrada-res-ndiz">Codepen.io</a></li>
-                <li><a href="index.html">Cerrar Menú</a></li>
-            </ul>
+        <div id="mobile">
+           <div id="nav_links">
+                <ul>
+                    <li><a>Proyectos</a></li>
+                    <li><a href="https://github.com/cesaradrianer">GitHub</a></li>
+                    <li><a href="https://codepen.io/c-sar-adri-n-estrada-res-ndiz">Codepen.io</a></li>
+                    <li><a href="#body">Cerrar Menú</a></li>
+                </ul>
+            </div>
+            <div id="mobile_content">
+                <h1 id="welcome">Bienvenido a Mi Portafolio</h1>
+                <p id="Presentation">Puedes empezar tocando el menú en la
+                    parte superior izquierda de ésta pantalla
+                </p>
+            </div> 
         </div>
-        <div id="content">
-            <h1 id="welcome">Bienvenido a Mi Portafolio</h1>
-            <p id="Presentation">Puedes empezar dando tocando el menú en la
-                parte superior izquierda de ésta pantalla
-            </p>
+        <div id="desktop">
+            
         </div>
-        
     </main>    
 </body>
 </html>
