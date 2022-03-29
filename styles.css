@@ -112,7 +112,8 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.652);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.481);
+    background-color: black;
   }
 
   #menu {
@@ -120,7 +121,10 @@ h1 {
   }
 
   #desktop {
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   #desktop_nav_links {
@@ -137,11 +141,37 @@ h1 {
 
   #desktop_nav_links li a {
     color: white;
+    letter-spacing: 4px;
+    font-weight: 300;
+    font-size: larger;
     opacity: 65%;
     transition: opacity 0.8s;
   }
 
   #desktop_nav_links li a:hover {
     opacity: 100%;
+  }
+
+  #welcome_desktop {
+    color: white;
+    font-weight: lighter;
+    font-size: 4vw;
+    letter-spacing: 10px;
+  }
+
+  #img_wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .img {
+    opacity: 50%;
   }
 }
