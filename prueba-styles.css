@@ -3,7 +3,7 @@ body {
   height: 100vh;
 }
 
-.container {
+#container {
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -15,14 +15,11 @@ body {
 
 #sub2id {
   width: 0;
-  opacity: 0;
   background-color: aqua;
-  transition: width 1s, opacity 2s;
 }
 
 #sub2id:target {
   width: 50%;
-  opacity: 1;
 }
 
 #btns {
