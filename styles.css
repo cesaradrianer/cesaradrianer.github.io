@@ -89,6 +89,16 @@ h1 {
   display: inline;
 }
 
+@media screen and (max-width: 425px) {
+  #desktop {
+    display: none;
+  }
+
+  #desktop_nav_links {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 426px) {
   body {
     background-color: black;
