@@ -3,37 +3,30 @@ body {
   height: 100vh;
 }
 
-#container {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
+.img-container {
+  animation: transición;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
 }
 
-.sub1 {
-  width: 100%;
+#img2prueba {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-#sub2id {
-  width: 0;
-  background-color: aqua;
-}
-
-#sub2id:target {
-  width: 50%;
-}
-
-#btns {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.btn {
-  padding: 10px 0 10px 0;
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid black;
+@keyframes transición {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
