@@ -100,137 +100,52 @@ h1 {
 }
 
 @media screen and (min-width: 426px) {
-  main {
-    height: 80vh;
-  }
-
-  h2 {
-    font-weight: 400;
-    letter-spacing: 5px;
-    opacity: 65%;
-    transition: opacity 0.8s;
-  }
-
-  h2:hover {
-    opacity: 100%;
-  }
-
-  h3 {
-    margin: 5px;
-  }
-
   #mobile {
     display: none;
   }
 
   #navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: white;
-    border: none;
-    box-shadow: 1px 1px 30px white;
-  }
-
-  #menu {
     display: none;
   }
 
   #desktop {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.44);
+    width: 60vw;
+    height: 70vh;
+  }
+
+  #navbar_desktop {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.44);
+    height: 9%;
+  }
+
+  #desktop_links {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  li {
+    height: 100%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 
-  #desktop_nav_links {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  #desktop_nav_links li {
-    list-style: none;
-  }
-
-  #desktop_nav_links li a {
-    letter-spacing: 4px;
-    font-weight: 400;
-    font-size: larger;
-    opacity: 65%;
-    transition: opacity 0.8s;
-  }
-
-  #desktop_nav_links li a:hover {
-    opacity: 100%;
-  }
-
-  #welcome_desktop {
-    font-weight: 200;
-    font-size: 4vw;
-    letter-spacing: 10px;
-  }
-
-  #img_wrapper {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  #img1 {
-    opacity: 65%;
-  }
-
-  #img2 {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: -2;
-    opacity: 0;
-  }
-
-  .container {
-    max-width: 400px;
-    border: 1px solid rgba(0, 0, 0, 0.186);
-    border-radius: 10px;
-    padding: 10px;
-  }
-
-  .container_title {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.186);
-  }
-
-  .project_links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border-top: 1px solid rgba(0, 0, 0, 0.186);
-  }
-
-  .project_links a {
-    margin-top: 7px;
-    opacity: 65%;
-    transition: opacity 0.8s;
-  }
-
-  .project_links a:hover {
-    opacity: 100%;
-  }
-
-  .project_img {
+  .desktop_link {
     width: 100%;
+    height: 100%;
+    text-align: center;
+    letter-spacing: 2px;
   }
 
-  footer {
-    text-align: center;
-    height: 100px;
+  .desktop_link:hover {
+    background-color: rgba(0, 0, 0, 0.138);
+    cursor: pointer;
   }
 }
