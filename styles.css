@@ -24,6 +24,17 @@ a {
   text-decoration: none;
 }
 
+#photo {
+  max-width: 100%;
+}
+
+#img_wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
 #mobile {
   height: 100vh;
   display: flex;
@@ -112,7 +123,6 @@ h1 {
     display: block;
     border: 1px solid rgba(0, 0, 0, 0.44);
     width: 60vw;
-    height: 70vh;
   }
 
   #navbar_desktop {
